@@ -1,0 +1,18 @@
+MODELO RELACIONAL - La Huequita del Sabor
+(PK = llave primaria, FK = llave foránea)
+
+CATEGORIA (id_categoria PK, nombre UNIQUE, descripcion)
+PRODUCTO (id_producto PK, nombre UNIQUE, precio_venta, stock_actual, stock_minimo,
+          id_categoria FK -> CATEGORIA)
+PROVEEDOR (id_proveedor PK, nombre, telefono, direccion)
+COMPRA (id_compra PK, fecha, id_proveedor FK -> PROVEEDOR)
+DETALLE_COMPRA (id_compra PK/FK -> COMPRA, id_producto PK/FK -> PRODUCTO, cantidad, costo_unitario)
+EMPLEADO (id_empleado PK, nombres, apellidos, cargo, telefono)
+CLIENTE (id_cliente PK, nombres, apellidos, telefono, direccion)
+VENTA (id_venta PK, fecha_hora, id_empleado FK -> EMPLEADO, id_cliente FK -> CLIENTE [opcional])
+DETALLE_VENTA (id_venta PK/FK -> VENTA, id_producto PK/FK -> PRODUCTO, cantidad, precio_unitario)
+METODO_PAGO (id_metodo PK, nombre UNIQUE)
+PAGO (id_pago PK, fecha_hora, monto, id_venta FK -> VENTA, id_metodo FK -> METODO_PAGO)
+REPARTIDOR (id_repartidor PK, nombres, apellidos, telefono)
+DOMICILIO (id_domicilio PK, direccion_entrega, referencia, costo_envio, estado,
+           id_venta FK UNIQUE -> VENTA, id_repartidor FK -> REPARTIDOR [opcional])
