@@ -1,1 +1,318 @@
-<mxfile host="app.diagrams.net"><diagram name="Modelo relacional" id="Modelo_relacional"><mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1740" pageHeight="960" math="0" shadow="0"><root><mxCell id="0"/><mxCell id="1" parent="0"/><mxCell id="t_categoria" value="CATEGORIA" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#6F3F86;fontColor=#FFFFFF;strokeColor=#52306A;fontSize=14;" vertex="1" parent="1"><mxGeometry x="30" y="140" width="270" height="108" as="geometry"/></mxCell><mxCell id="r_categoria_id_categoria" value="id_categoria : INT   (PK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;" vertex="1" parent="t_categoria"><mxGeometry y="30" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_categoria_nombre" value="nombre : VARCHAR(60)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_categoria"><mxGeometry y="56" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_categoria_descripcion" value="descripcion : VARCHAR(255)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_categoria"><mxGeometry y="82" width="270" height="26" as="geometry"/></mxCell><mxCell id="t_producto" value="PRODUCTO" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#6F3F86;fontColor=#FFFFFF;strokeColor=#52306A;fontSize=14;" vertex="1" parent="1"><mxGeometry x="380" y="30" width="270" height="186" as="geometry"/></mxCell><mxCell id="r_producto_id_producto" value="id_producto : INT   (PK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;" vertex="1" parent="t_producto"><mxGeometry y="30" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_producto_nombre" value="nombre : VARCHAR(100)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_producto"><mxGeometry y="56" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_producto_precio_venta" value="precio_venta : DECIMAL(8,2)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_producto"><mxGeometry y="82" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_producto_stock_actual" value="stock_actual : INT" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_producto"><mxGeometry y="108" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_producto_stock_minimo" value="stock_minimo : INT" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_producto"><mxGeometry y="134" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_producto_id_categoria" value="id_categoria : INT   (FK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=2;" vertex="1" parent="t_producto"><mxGeometry y="160" width="270" height="26" as="geometry"/></mxCell><mxCell id="t_detalle_compra" value="DETALLE_COMPRA" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#6F3F86;fontColor=#FFFFFF;strokeColor=#52306A;fontSize=14;" vertex="1" parent="1"><mxGeometry x="730" y="30" width="270" height="134" as="geometry"/></mxCell><mxCell id="r_detalle_compra_id_compra" value="id_compra : INT   (PK, FK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;" vertex="1" parent="t_detalle_compra"><mxGeometry y="30" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_detalle_compra_id_producto" value="id_producto : INT   (PK, FK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;" vertex="1" parent="t_detalle_compra"><mxGeometry y="56" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_detalle_compra_cantidad" value="cantidad : INT" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_detalle_compra"><mxGeometry y="82" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_detalle_compra_costo_unitario" value="costo_unitario : DECIMAL(8,2)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_detalle_compra"><mxGeometry y="108" width="270" height="26" as="geometry"/></mxCell><mxCell id="t_compra" value="COMPRA" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#6F3F86;fontColor=#FFFFFF;strokeColor=#52306A;fontSize=14;" vertex="1" parent="1"><mxGeometry x="1080" y="30" width="270" height="108" as="geometry"/></mxCell><mxCell id="r_compra_id_compra" value="id_compra : INT   (PK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;" vertex="1" parent="t_compra"><mxGeometry y="30" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_compra_fecha" value="fecha : DATE" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_compra"><mxGeometry y="56" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_compra_id_proveedor" value="id_proveedor : INT   (FK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=2;" vertex="1" parent="t_compra"><mxGeometry y="82" width="270" height="26" as="geometry"/></mxCell><mxCell id="t_proveedor" value="PROVEEDOR" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#6F3F86;fontColor=#FFFFFF;strokeColor=#52306A;fontSize=14;" vertex="1" parent="1"><mxGeometry x="1430" y="30" width="270" height="134" as="geometry"/></mxCell><mxCell id="r_proveedor_id_proveedor" value="id_proveedor : INT   (PK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;" vertex="1" parent="t_proveedor"><mxGeometry y="30" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_proveedor_nombre" value="nombre : VARCHAR(100)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_proveedor"><mxGeometry y="56" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_proveedor_telefono" value="telefono : VARCHAR(15)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_proveedor"><mxGeometry y="82" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_proveedor_direccion" value="direccion : VARCHAR(150)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_proveedor"><mxGeometry y="108" width="270" height="26" as="geometry"/></mxCell><mxCell id="t_detalle_venta" value="DETALLE_VENTA" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#6F3F86;fontColor=#FFFFFF;strokeColor=#52306A;fontSize=14;" vertex="1" parent="1"><mxGeometry x="380" y="300" width="270" height="134" as="geometry"/></mxCell><mxCell id="r_detalle_venta_id_venta" value="id_venta : INT   (PK, FK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;" vertex="1" parent="t_detalle_venta"><mxGeometry y="30" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_detalle_venta_id_producto" value="id_producto : INT   (PK, FK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;" vertex="1" parent="t_detalle_venta"><mxGeometry y="56" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_detalle_venta_cantidad" value="cantidad : INT" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_detalle_venta"><mxGeometry y="82" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_detalle_venta_precio_unitario" value="precio_unitario : DECIMAL(8,2)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_detalle_venta"><mxGeometry y="108" width="270" height="26" as="geometry"/></mxCell><mxCell id="t_venta" value="VENTA" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#6F3F86;fontColor=#FFFFFF;strokeColor=#52306A;fontSize=14;" vertex="1" parent="1"><mxGeometry x="730" y="300" width="270" height="134" as="geometry"/></mxCell><mxCell id="r_venta_id_venta" value="id_venta : INT   (PK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;" vertex="1" parent="t_venta"><mxGeometry y="30" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_venta_fecha_hora" value="fecha_hora : DATETIME" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_venta"><mxGeometry y="56" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_venta_id_empleado" value="id_empleado : INT   (FK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=2;" vertex="1" parent="t_venta"><mxGeometry y="82" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_venta_id_cliente" value="id_cliente : INT   (FK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=2;" vertex="1" parent="t_venta"><mxGeometry y="108" width="270" height="26" as="geometry"/></mxCell><mxCell id="t_empleado" value="EMPLEADO" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#6F3F86;fontColor=#FFFFFF;strokeColor=#52306A;fontSize=14;" vertex="1" parent="1"><mxGeometry x="1080" y="300" width="270" height="160" as="geometry"/></mxCell><mxCell id="r_empleado_id_empleado" value="id_empleado : INT   (PK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;" vertex="1" parent="t_empleado"><mxGeometry y="30" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_empleado_nombres" value="nombres : VARCHAR(80)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_empleado"><mxGeometry y="56" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_empleado_apellidos" value="apellidos : VARCHAR(80)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_empleado"><mxGeometry y="82" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_empleado_cargo" value="cargo : VARCHAR(40)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_empleado"><mxGeometry y="108" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_empleado_telefono" value="telefono : VARCHAR(15)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_empleado"><mxGeometry y="134" width="270" height="26" as="geometry"/></mxCell><mxCell id="t_cliente" value="CLIENTE" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#6F3F86;fontColor=#FFFFFF;strokeColor=#52306A;fontSize=14;" vertex="1" parent="1"><mxGeometry x="1080" y="500" width="270" height="160" as="geometry"/></mxCell><mxCell id="r_cliente_id_cliente" value="id_cliente : INT   (PK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;" vertex="1" parent="t_cliente"><mxGeometry y="30" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_cliente_nombres" value="nombres : VARCHAR(80)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_cliente"><mxGeometry y="56" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_cliente_apellidos" value="apellidos : VARCHAR(80)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_cliente"><mxGeometry y="82" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_cliente_telefono" value="telefono : VARCHAR(15)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_cliente"><mxGeometry y="108" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_cliente_direccion" value="direccion : VARCHAR(150)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_cliente"><mxGeometry y="134" width="270" height="26" as="geometry"/></mxCell><mxCell id="t_metodo_pago" value="METODO_PAGO" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#6F3F86;fontColor=#FFFFFF;strokeColor=#52306A;fontSize=14;" vertex="1" parent="1"><mxGeometry x="30" y="540" width="270" height="82" as="geometry"/></mxCell><mxCell id="r_metodo_pago_id_metodo" value="id_metodo : INT   (PK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;" vertex="1" parent="t_metodo_pago"><mxGeometry y="30" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_metodo_pago_nombre" value="nombre : VARCHAR(40)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_metodo_pago"><mxGeometry y="56" width="270" height="26" as="geometry"/></mxCell><mxCell id="t_pago" value="PAGO" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#6F3F86;fontColor=#FFFFFF;strokeColor=#52306A;fontSize=14;" vertex="1" parent="1"><mxGeometry x="380" y="540" width="270" height="160" as="geometry"/></mxCell><mxCell id="r_pago_id_pago" value="id_pago : INT   (PK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;" vertex="1" parent="t_pago"><mxGeometry y="30" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_pago_fecha_hora" value="fecha_hora : DATETIME" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_pago"><mxGeometry y="56" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_pago_monto" value="monto : DECIMAL(8,2)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_pago"><mxGeometry y="82" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_pago_id_venta" value="id_venta : INT   (FK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=2;" vertex="1" parent="t_pago"><mxGeometry y="108" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_pago_id_metodo" value="id_metodo : INT   (FK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=2;" vertex="1" parent="t_pago"><mxGeometry y="134" width="270" height="26" as="geometry"/></mxCell><mxCell id="t_domicilio" value="DOMICILIO" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#6F3F86;fontColor=#FFFFFF;strokeColor=#52306A;fontSize=14;" vertex="1" parent="1"><mxGeometry x="1080" y="710" width="270" height="212" as="geometry"/></mxCell><mxCell id="r_domicilio_id_domicilio" value="id_domicilio : INT   (PK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;" vertex="1" parent="t_domicilio"><mxGeometry y="30" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_domicilio_direccion_entrega" value="direccion_entrega : VARCHAR(150)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_domicilio"><mxGeometry y="56" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_domicilio_referencia" value="referencia : VARCHAR(150)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_domicilio"><mxGeometry y="82" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_domicilio_costo_envio" value="costo_envio : DECIMAL(6,2)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_domicilio"><mxGeometry y="108" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_domicilio_estado" value="estado : VARCHAR(15)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_domicilio"><mxGeometry y="134" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_domicilio_id_venta" value="id_venta : INT   (FK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=2;" vertex="1" parent="t_domicilio"><mxGeometry y="160" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_domicilio_id_repartidor" value="id_repartidor : INT   (FK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=2;" vertex="1" parent="t_domicilio"><mxGeometry y="186" width="270" height="26" as="geometry"/></mxCell><mxCell id="t_repartidor" value="REPARTIDOR" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#6F3F86;fontColor=#FFFFFF;strokeColor=#52306A;fontSize=14;" vertex="1" parent="1"><mxGeometry x="1430" y="710" width="270" height="134" as="geometry"/></mxCell><mxCell id="r_repartidor_id_repartidor" value="id_repartidor : INT   (PK)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;" vertex="1" parent="t_repartidor"><mxGeometry y="30" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_repartidor_nombres" value="nombres : VARCHAR(80)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_repartidor"><mxGeometry y="56" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_repartidor_apellidos" value="apellidos : VARCHAR(80)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_repartidor"><mxGeometry y="82" width="270" height="26" as="geometry"/></mxCell><mxCell id="r_repartidor_telefono" value="telefono : VARCHAR(15)" style="text;strokeColor=#CCCCCC;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=8;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;" vertex="1" parent="t_repartidor"><mxGeometry y="108" width="270" height="26" as="geometry"/></mxCell><mxCell id="f0" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmany;endFill=0;startFill=0;startSize=12;endSize=12;strokeColor=#555555;strokeWidth=1.5;" edge="1" parent="1" source="r_producto_id_categoria" target="r_categoria_id_categoria"><mxGeometry width="100" height="100" relative="1" as="geometry"/></mxCell><mxCell id="f1" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmany;endFill=0;startFill=0;startSize=12;endSize=12;strokeColor=#555555;strokeWidth=1.5;" edge="1" parent="1" source="r_detalle_compra_id_producto" target="r_producto_id_producto"><mxGeometry width="100" height="100" relative="1" as="geometry"/></mxCell><mxCell id="f2" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmany;endFill=0;startFill=0;startSize=12;endSize=12;strokeColor=#555555;strokeWidth=1.5;" edge="1" parent="1" source="r_detalle_compra_id_compra" target="r_compra_id_compra"><mxGeometry width="100" height="100" relative="1" as="geometry"/></mxCell><mxCell id="f3" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmany;endFill=0;startFill=0;startSize=12;endSize=12;strokeColor=#555555;strokeWidth=1.5;" edge="1" parent="1" source="r_compra_id_proveedor" target="r_proveedor_id_proveedor"><mxGeometry width="100" height="100" relative="1" as="geometry"/></mxCell><mxCell id="f4" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmany;endFill=0;startFill=0;startSize=12;endSize=12;strokeColor=#555555;strokeWidth=1.5;" edge="1" parent="1" source="r_detalle_venta_id_producto" target="r_producto_id_producto"><mxGeometry width="100" height="100" relative="1" as="geometry"/></mxCell><mxCell id="f5" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmany;endFill=0;startFill=0;startSize=12;endSize=12;strokeColor=#555555;strokeWidth=1.5;" edge="1" parent="1" source="r_detalle_venta_id_venta" target="r_venta_id_venta"><mxGeometry width="100" height="100" relative="1" as="geometry"/></mxCell><mxCell id="f6" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmany;endFill=0;startFill=0;startSize=12;endSize=12;strokeColor=#555555;strokeWidth=1.5;" edge="1" parent="1" source="r_venta_id_empleado" target="r_empleado_id_empleado"><mxGeometry width="100" height="100" relative="1" as="geometry"/></mxCell><mxCell id="f7" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToOne;startArrow=ERmany;endFill=0;startFill=0;startSize=12;endSize=12;strokeColor=#555555;strokeWidth=1.5;" edge="1" parent="1" source="r_venta_id_cliente" target="r_cliente_id_cliente"><mxGeometry width="100" height="100" relative="1" as="geometry"/></mxCell><mxCell id="f8" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmany;endFill=0;startFill=0;startSize=12;endSize=12;strokeColor=#555555;strokeWidth=1.5;" edge="1" parent="1" source="r_pago_id_venta" target="r_venta_id_venta"><mxGeometry width="100" height="100" relative="1" as="geometry"/></mxCell><mxCell id="f9" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmany;endFill=0;startFill=0;startSize=12;endSize=12;strokeColor=#555555;strokeWidth=1.5;" edge="1" parent="1" source="r_pago_id_metodo" target="r_metodo_pago_id_metodo"><mxGeometry width="100" height="100" relative="1" as="geometry"/></mxCell><mxCell id="f10" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERzeroToOne;endFill=0;startFill=0;startSize=12;endSize=12;strokeColor=#555555;strokeWidth=1.5;" edge="1" parent="1" source="r_domicilio_id_venta" target="r_venta_id_venta"><mxGeometry width="100" height="100" relative="1" as="geometry"/></mxCell><mxCell id="f11" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToOne;startArrow=ERmany;endFill=0;startFill=0;startSize=12;endSize=12;strokeColor=#555555;strokeWidth=1.5;" edge="1" parent="1" source="r_domicilio_id_repartidor" target="r_repartidor_id_repartidor"><mxGeometry width="100" height="100" relative="1" as="geometry"/></mxCell></root></mxGraphModel></diagram></mxfile>
+<mxfile host="app.diagrams.net" scale="1" border="0">
+  <diagram name="Modelo relacional" id="rel_txt">
+    <mxGraphModel dx="2132" dy="1332" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1487" pageHeight="1395" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n_Categoria" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=right;spacingRight=0;" value="&lt;b&gt;Categoria (&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="124" x="276" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n_Producto" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=right;spacingRight=0;" value="&lt;b&gt;Producto (&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="114" x="286" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="n_Proveedor" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=right;spacingRight=0;" value="&lt;b&gt;Proveedor (&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="124" x="276" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="n_Compra" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=right;spacingRight=0;" value="&lt;b&gt;Compra (&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="93" x="307" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="n_Detalle_compra" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=right;spacingRight=0;" value="&lt;b&gt;Detalle_compra (&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="176" x="224" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="n_Empleado" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=right;spacingRight=0;" value="&lt;b&gt;Empleado (&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="114" x="286" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="n_Cliente" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=right;spacingRight=0;" value="&lt;b&gt;Cliente (&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="104" x="296" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="n_Venta" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=right;spacingRight=0;" value="&lt;b&gt;Venta (&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="83" x="317" y="795" as="geometry" />
+        </mxCell>
+        <mxCell id="n_Detalle_venta" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=right;spacingRight=0;" value="&lt;b&gt;Detalle_venta (&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="166" x="234" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="n_Metodo_pago" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=right;spacingRight=0;" value="&lt;b&gt;Metodo_pago (&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="145" x="255" y="1005" as="geometry" />
+        </mxCell>
+        <mxCell id="n_Pago" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=right;spacingRight=0;" value="&lt;b&gt;Pago (&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="72" x="328" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="n_Repartidor" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=right;spacingRight=0;" value="&lt;b&gt;Repartidor (&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="135" x="265" y="1215" as="geometry" />
+        </mxCell>
+        <mxCell id="n_Domicilio" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=right;spacingRight=0;" value="&lt;b&gt;Domicilio (&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="124" x="276" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Categoria_id_categoria" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="&lt;u&gt;id_categoria&lt;/u&gt;," vertex="1">
+          <mxGeometry height="30" width="135" x="408" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Categoria_nombre" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="nombre," vertex="1">
+          <mxGeometry height="30" width="77" x="559" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Categoria_descripcion" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="descripcion)" vertex="1">
+          <mxGeometry height="30" width="125" x="652" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Producto_id_producto" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="&lt;u&gt;id_producto&lt;/u&gt;," vertex="1">
+          <mxGeometry height="30" width="125" x="408" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Producto_nombre" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="nombre," vertex="1">
+          <mxGeometry height="30" width="77" x="549" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Producto_precio_venta" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="precio_venta," vertex="1">
+          <mxGeometry height="30" width="135" x="642" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Producto_stock_actual" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="stock_actual," vertex="1">
+          <mxGeometry height="30" width="135" x="793" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Producto_stock_minimo" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="stock_minimo," vertex="1">
+          <mxGeometry height="30" width="135" x="944" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Producto_id_categoria" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="id_categoria)" vertex="1">
+          <mxGeometry height="30" width="135" x="1095" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Proveedor_id_proveedor" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="&lt;u&gt;id_proveedor&lt;/u&gt;," vertex="1">
+          <mxGeometry height="30" width="135" x="408" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Proveedor_nombre" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="nombre," vertex="1">
+          <mxGeometry height="30" width="77" x="559" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Proveedor_telefono" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="telefono," vertex="1">
+          <mxGeometry height="30" width="96" x="652" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Proveedor_direccion" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="direccion)" vertex="1">
+          <mxGeometry height="30" width="106" x="764" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Compra_id_compra" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="&lt;u&gt;id_compra&lt;/u&gt;," vertex="1">
+          <mxGeometry height="30" width="106" x="408" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Compra_fecha" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="fecha," vertex="1">
+          <mxGeometry height="30" width="68" x="530" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Compra_id_proveedor" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="id_proveedor)" vertex="1">
+          <mxGeometry height="30" width="135" x="614" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Detalle_compra_id_compra" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="&lt;u&gt;id_compra&lt;/u&gt;," vertex="1">
+          <mxGeometry height="30" width="106" x="408" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Detalle_compra_id_producto" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="&lt;u&gt;id_producto&lt;/u&gt;," vertex="1">
+          <mxGeometry height="30" width="125" x="530" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Detalle_compra_cantidad" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="cantidad," vertex="1">
+          <mxGeometry height="30" width="96" x="671" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Detalle_compra_costo_unitario" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="costo_unitario)" vertex="1">
+          <mxGeometry height="30" width="154" x="784" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Empleado_id_empleado" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="&lt;u&gt;id_empleado&lt;/u&gt;," vertex="1">
+          <mxGeometry height="30" width="125" x="408" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Empleado_nombres" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="nombres," vertex="1">
+          <mxGeometry height="30" width="87" x="549" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Empleado_apellidos" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="apellidos," vertex="1">
+          <mxGeometry height="30" width="106" x="652" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Empleado_cargo" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="cargo," vertex="1">
+          <mxGeometry height="30" width="68" x="774" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Empleado_telefono" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="telefono)" vertex="1">
+          <mxGeometry height="30" width="96" x="858" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Cliente_id_cliente" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="&lt;u&gt;id_cliente&lt;/u&gt;," vertex="1">
+          <mxGeometry height="30" width="116" x="408" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Cliente_nombres" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="nombres," vertex="1">
+          <mxGeometry height="30" width="87" x="540" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Cliente_apellidos" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="apellidos," vertex="1">
+          <mxGeometry height="30" width="106" x="642" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Cliente_telefono" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="telefono," vertex="1">
+          <mxGeometry height="30" width="96" x="764" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Cliente_direccion" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="direccion)" vertex="1">
+          <mxGeometry height="30" width="106" x="877" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Venta_id_venta" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="&lt;u&gt;id_venta&lt;/u&gt;," vertex="1">
+          <mxGeometry height="30" width="96" x="408" y="795" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Venta_fecha_hora" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="fecha_hora," vertex="1">
+          <mxGeometry height="30" width="116" x="520" y="795" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Venta_id_empleado" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="id_empleado," vertex="1">
+          <mxGeometry height="30" width="125" x="652" y="795" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Venta_id_cliente" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="id_cliente)" vertex="1">
+          <mxGeometry height="30" width="116" x="793" y="795" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Detalle_venta_id_venta" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="&lt;u&gt;id_venta&lt;/u&gt;," vertex="1">
+          <mxGeometry height="30" width="96" x="408" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Detalle_venta_id_producto" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="&lt;u&gt;id_producto&lt;/u&gt;," vertex="1">
+          <mxGeometry height="30" width="125" x="520" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Detalle_venta_cantidad" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="cantidad," vertex="1">
+          <mxGeometry height="30" width="96" x="662" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Detalle_venta_precio_unitario" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="precio_unitario)" vertex="1">
+          <mxGeometry height="30" width="164" x="774" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Metodo_pago_id_metodo" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="&lt;u&gt;id_metodo&lt;/u&gt;," vertex="1">
+          <mxGeometry height="30" width="106" x="408" y="1005" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Metodo_pago_nombre" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="nombre)" vertex="1">
+          <mxGeometry height="30" width="77" x="530" y="1005" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Pago_id_pago" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="&lt;u&gt;id_pago&lt;/u&gt;," vertex="1">
+          <mxGeometry height="30" width="87" x="408" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Pago_fecha_hora" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="fecha_hora," vertex="1">
+          <mxGeometry height="30" width="116" x="511" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Pago_monto" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="monto," vertex="1">
+          <mxGeometry height="30" width="68" x="642" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Pago_id_venta" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="id_venta," vertex="1">
+          <mxGeometry height="30" width="96" x="726" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Pago_id_metodo" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="id_metodo)" vertex="1">
+          <mxGeometry height="30" width="106" x="838" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Repartidor_id_repartidor" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="&lt;u&gt;id_repartidor&lt;/u&gt;," vertex="1">
+          <mxGeometry height="30" width="144" x="408" y="1215" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Repartidor_nombres" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="nombres," vertex="1">
+          <mxGeometry height="30" width="87" x="568" y="1215" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Repartidor_apellidos" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="apellidos," vertex="1">
+          <mxGeometry height="30" width="106" x="671" y="1215" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Repartidor_telefono" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="telefono)" vertex="1">
+          <mxGeometry height="30" width="96" x="793" y="1215" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Domicilio_id_domicilio" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="&lt;u&gt;id_domicilio&lt;/u&gt;," vertex="1">
+          <mxGeometry height="30" width="135" x="408" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Domicilio_direccion_entrega" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="direccion_entrega," vertex="1">
+          <mxGeometry height="30" width="183" x="559" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Domicilio_referencia" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="referencia," vertex="1">
+          <mxGeometry height="30" width="116" x="758" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Domicilio_costo_envio" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="costo_envio," vertex="1">
+          <mxGeometry height="30" width="125" x="889" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Domicilio_estado" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="estado," vertex="1">
+          <mxGeometry height="30" width="77" x="1030" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Domicilio_id_venta" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="id_venta," vertex="1">
+          <mxGeometry height="30" width="96" x="1124" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="a_Domicilio_id_repartidor" parent="1" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;strokeColor=none;fillColor=none;fontSize=18;fontFamily=Helvetica;align=center;" value="id_repartidor)" vertex="1">
+          <mxGeometry height="30" width="144" x="1236" y="1320" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" edge="1" parent="1" source="a_Producto_id_categoria" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;endSize=8;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="a_Categoria_id_categoria">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1162" y="128" />
+              <mxPoint x="475" y="128" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="a_Compra_id_proveedor" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;endSize=8;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="a_Proveedor_id_proveedor">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="681" y="338" />
+              <mxPoint x="475" y="338" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="a_Detalle_compra_id_compra" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;endSize=8;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="a_Compra_id_compra">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="a_Detalle_compra_id_producto" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;endSize=8;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.35;entryY=1;entryDx=0;entryDy=0;" target="a_Producto_id_producto">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="593" y="464" />
+              <mxPoint x="1415" y="464" />
+              <mxPoint x="1415" y="223" />
+              <mxPoint x="452" y="223" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="a_Venta_id_empleado" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;endSize=8;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="a_Empleado_id_empleado">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="715" y="779" />
+              <mxPoint x="80" y="779" />
+              <mxPoint x="80" y="631" />
+              <mxPoint x="471" y="631" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="a_Venta_id_cliente" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;endSize=8;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="a_Cliente_id_cliente">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="851" y="758" />
+              <mxPoint x="466" y="758" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="a_Detalle_venta_id_venta" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;endSize=8;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.8;entryY=1;entryDx=0;entryDy=0;" target="a_Venta_id_venta">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="456" y="862" />
+              <mxPoint x="485" y="862" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="a_Detalle_venta_id_producto" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;endSize=8;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.65;entryY=1;entryDx=0;entryDy=0;" target="a_Producto_id_producto">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="583" y="884" />
+              <mxPoint x="1442" y="884" />
+              <mxPoint x="1442" y="211" />
+              <mxPoint x="489" y="211" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="a_Pago_id_venta" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;endSize=8;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="a_Venta_id_venta">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="774" y="1094" />
+              <mxPoint x="55" y="1094" />
+              <mxPoint x="55" y="849" />
+              <mxPoint x="456" y="849" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="a_Pago_id_metodo" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;endSize=8;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="a_Metodo_pago_id_metodo">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="891" y="1072" />
+              <mxPoint x="461" y="1072" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="a_Domicilio_id_venta" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;endSize=8;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.2;entryY=1;entryDx=0;entryDy=0;" target="a_Venta_id_venta">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1172" y="1304" />
+              <mxPoint x="30" y="1304" />
+              <mxPoint x="30" y="841" />
+              <mxPoint x="427" y="841" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="a_Domicilio_id_repartidor" style="edgeStyle=none;html=1;rounded=0;endArrow=block;endFill=1;endSize=8;strokeWidth=2;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="a_Repartidor_id_repartidor">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1308" y="1282" />
+              <mxPoint x="480" y="1282" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
