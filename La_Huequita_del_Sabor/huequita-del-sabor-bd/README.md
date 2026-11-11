@@ -54,6 +54,10 @@ El modelo relacional muestra cómo se transforma el diseño conceptual en tablas
 
 [Ver o editar el modelo relacional](diagrams/huequita_relacional.drawio)
 
+#### Diagrama de tablas
+
+[![Diagrama de las 13 tablas con claves primarias y foráneas](diagrams/huequita_relacional_tablas.png)](diagrams/huequita_relacional_tablas.png)
+
 ### 1.3. Tablas que conforman el modelo
 
 La base de datos está organizada en **13 tablas**:

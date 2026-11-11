@@ -37,6 +37,10 @@ El esquema presenta las 13 tablas, con las claves primarias subrayadas y flechas
 
 [Archivo editable del modelo relacional](La_Huequita_del_Sabor/huequita-del-sabor-bd/diagrams/huequita_relacional.drawio) · [Esquema en texto](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/modelo_relacional.txt)
 
+#### Diagrama de tablas
+
+[![Diagrama de las 13 tablas con claves primarias y foráneas](La_Huequita_del_Sabor/huequita-del-sabor-bd/diagrams/huequita_relacional_tablas.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/diagrams/huequita_relacional_tablas.png)
+
 ## Implementación en SQL
 
 ### Definición de las 13 tablas
