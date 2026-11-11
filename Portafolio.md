@@ -612,15 +612,12 @@ WHERE  NOT EXISTS (
 
 [![Clientes que compraron todas las bebidas en Relational](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/consulta-05.jpg)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/consulta-05.jpg)
 
-[Ver las cinco consultas en el archivo SQL](La_Huequita_del_Sabor/huequita-del-sabor-bd/sql/03_consultas.sql).
+
 
 ## Conclusiones
 
 El diseño usa tablas de detalle para representar los productos de cada compra y venta. Las claves foráneas conectan esos movimientos con el inventario y vinculan las ventas con sus pagos y domicilios. Las consultas permiten detectar faltantes de stock, seguir pedidos abiertos y calcular ingresos por categoría.
 
-## Referencias
 
-- [Manual de referencia de MySQL 8.0](https://dev.mysql.com/doc/refman/8.0/en/)
-- [Calculadora de álgebra relacional RelaX](https://dbis-uibk.github.io/relax/)
 
 [Volver a la carátula](README.md)
