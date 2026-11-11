@@ -194,6 +194,15 @@ CREATE TABLE domicilio (
 
 </details>
 
+<details>
+<summary>Captura de las 13 tablas creadas</summary>
+
+**Tablas creadas en MySQL**
+
+[![Tablas creadas en MySQL](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/tablas-creadas.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/tablas-creadas.png)
+
+</details>
+
 ### Carga de los datos de prueba
 
 Inserta los datos de ejemplo en las 13 tablas. Ejecuta este código después del DDL. [Abrir el archivo 02_dml.sql](La_Huequita_del_Sabor/huequita-del-sabor-bd/sql/02_dml.sql).
@@ -313,6 +322,23 @@ INSERT INTO domicilio (direccion_entrega, referencia, costo_envio, estado, id_ve
 
 </details>
 
+<details>
+<summary>Capturas de los datos insertados</summary>
+
+**Datos insertados en producto**
+
+[![Datos insertados en producto](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/insercion-producto.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/insercion-producto.png)
+
+**Datos insertados en venta**
+
+[![Datos insertados en venta](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/insercion-venta.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/insercion-venta.png)
+
+**Datos insertados en detalle_venta**
+
+[![Datos insertados en detalle_venta](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/insercion-detalle-venta.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/insercion-detalle-venta.png)
+
+</details>
+
 ### Verificación de las 13 tablas
 
 Lista las tablas y consulta sus registros en MySQL. [Abrir el archivo 04_verificacion.sql](La_Huequita_del_Sabor/huequita-del-sabor-bd/sql/04_verificacion.sql).
@@ -339,6 +365,67 @@ SELECT * FROM pago;
 SELECT * FROM repartidor;
 SELECT * FROM domicilio;
 ```
+
+</details>
+
+<details>
+<summary>Capturas de las 13 tablas en MySQL Workbench</summary>
+
+**Tabla categoria**
+
+[![Tabla categoria](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/categoria.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/categoria.png)
+
+**Tabla producto**
+
+[![Tabla producto](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/producto.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/producto.png)
+
+**Tabla proveedor**
+
+[![Tabla proveedor](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/proveedor.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/proveedor.png)
+
+**Tabla compra**
+
+[![Tabla compra](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/compra.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/compra.png)
+
+**Tabla detalle_compra**
+
+[![Tabla detalle_compra](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/detalle_compra.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/detalle_compra.png)
+
+**Tabla empleado**
+
+[![Tabla empleado](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/empleado.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/empleado.png)
+
+**Tabla cliente**
+
+[![Tabla cliente](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/cliente.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/cliente.png)
+
+**Tabla venta**
+
+[![Tabla venta](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/venta.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/venta.png)
+
+**Tabla detalle_venta, parte 1**
+
+[![Tabla detalle_venta, parte 1](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/detalle_venta-01.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/detalle_venta-01.png)
+
+**Tabla detalle_venta, parte 2**
+
+[![Tabla detalle_venta, parte 2](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/detalle_venta-02.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/detalle_venta-02.png)
+
+**Tabla metodo_pago**
+
+[![Tabla metodo_pago](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/metodo_pago.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/metodo_pago.png)
+
+**Tabla pago**
+
+[![Tabla pago](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/pago.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/pago.png)
+
+**Tabla repartidor**
+
+[![Tabla repartidor](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/repartidor.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/repartidor.png)
+
+**Tabla domicilio**
+
+[![Tabla domicilio](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/domicilio.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/domicilio.png)
 
 </details>
 
@@ -371,6 +458,10 @@ WHERE  stock_actual <= stock_minimo;
 | Galletas de chocolate | 8 | 10 |
 | Brownie | 6 | 6 |
 | Torta de chocolate | 4 | 5 |
+
+**Stock bajo en Relational**
+
+[![Stock bajo en Relational](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/consulta-01.jpg)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/consulta-01.jpg)
 
 ### 2. Pedidos a domicilio pendientes o en camino
 
@@ -407,6 +498,10 @@ WHERE  d.estado IN ('Pendiente', 'En camino');
 | 4 | 2026-11-05 19:00:00 | Sofía Castillo | Barrio El Valle, Loja | En camino | Marco |
 | 5 | 2026-11-07 17:30:00 | Diego Mora | Ciudadela Daniel Álvarez, Loja | Pendiente | Sin asignar |
 
+**Domicilios abiertos en Relational**
+
+[![Domicilios abiertos en Relational](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/consulta-02.jpg)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/consulta-02.jpg)
+
 ### 3. Productos que nunca se han vendido
 
 La diferencia obtiene los IDs 5 y 10. El SQL del proyecto devuelve los nombres de esos productos.
@@ -428,6 +523,10 @@ WHERE  p.id_producto NOT IN (SELECT dv.id_producto FROM detalle_venta dv);
 **Resultado con los datos de prueba**
 
 **5** · Galletas de chocolate y **10** · Torta de chocolate.
+
+**Productos sin ventas en Relational**
+
+[![Productos sin ventas en Relational](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/consulta-03.jpg)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/consulta-03.jpg)
 
 ### 4. Ingresos por categoría
 
@@ -470,6 +569,10 @@ ORDER BY total_ingresos DESC;
 | Helados | 4 | $5,00 |
 | Postres | 3 | $4,50 |
 
+**Ingresos por categoría en RelaX**
+
+[![Ingresos por categoría en RelaX](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/consulta-04.jpg)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/consulta-04.jpg)
+
 ### 5. Clientes que compraron todas las bebidas
 
 La división identifica a los clientes que compraron cada uno de los productos de la categoría Bebidas.
@@ -505,6 +608,10 @@ WHERE  NOT EXISTS (
 **Resultado con los datos de prueba**
 
 **Ana Torres** y **Luis Pérez**.
+
+**Clientes que compraron todas las bebidas en Relational**
+
+[![Clientes que compraron todas las bebidas en Relational](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/consulta-05.jpg)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/consulta-05.jpg)
 
 [Ver las cinco consultas en el archivo SQL](La_Huequita_del_Sabor/huequita-del-sabor-bd/sql/03_consultas.sql).
 
