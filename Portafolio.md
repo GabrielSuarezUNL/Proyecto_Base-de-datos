@@ -9,7 +9,7 @@ Gabriel Suárez · Unidad 1
 
 </div>
 
-[Carátula](README.md) · [Modelos](#modelos-de-la-base-de-datos) · [Implementación en SQL](#implementación-en-sql) · [Álgebra relacional](#consultas-de-álgebra-relacional) · [Conclusiones](#conclusiones)
+[Carátula](README.md) · [Modelos](#modelos-de-la-base-de-datos) · [Implementación en SQL](#implementación-en-sql) · [Tablas SQL](#tablas-sql-en-mysql-workbench) · [Álgebra relacional](#consultas-de-álgebra-relacional) · [Conclusiones](#conclusiones)
 
 ## Objetivo
 
@@ -368,66 +368,65 @@ SELECT * FROM domicilio;
 
 </details>
 
-<details>
-<summary>Capturas de las 13 tablas en MySQL Workbench</summary>
+### Tablas SQL en MySQL Workbench
 
-**Tabla categoria**
+Capturas de las 13 tablas del proyecto. La tabla detalle_venta se muestra en dos partes para incluir sus 23 filas.
+
+#### Tabla categoria
 
 [![Tabla categoria](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/categoria.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/categoria.png)
 
-**Tabla producto**
+#### Tabla producto
 
 [![Tabla producto](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/producto.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/producto.png)
 
-**Tabla proveedor**
+#### Tabla proveedor
 
 [![Tabla proveedor](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/proveedor.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/proveedor.png)
 
-**Tabla compra**
+#### Tabla compra
 
 [![Tabla compra](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/compra.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/compra.png)
 
-**Tabla detalle_compra**
+#### Tabla detalle_compra
 
 [![Tabla detalle_compra](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/detalle_compra.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/detalle_compra.png)
 
-**Tabla empleado**
+#### Tabla empleado
 
 [![Tabla empleado](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/empleado.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/empleado.png)
 
-**Tabla cliente**
+#### Tabla cliente
 
 [![Tabla cliente](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/cliente.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/cliente.png)
 
-**Tabla venta**
+#### Tabla venta
 
 [![Tabla venta](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/venta.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/venta.png)
 
-**Tabla detalle_venta, parte 1**
+#### Tabla detalle_venta, parte 1
 
 [![Tabla detalle_venta, parte 1](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/detalle_venta-01.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/detalle_venta-01.png)
 
-**Tabla detalle_venta, parte 2**
+#### Tabla detalle_venta, parte 2
 
 [![Tabla detalle_venta, parte 2](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/detalle_venta-02.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/detalle_venta-02.png)
 
-**Tabla metodo_pago**
+#### Tabla metodo_pago
 
 [![Tabla metodo_pago](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/metodo_pago.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/metodo_pago.png)
 
-**Tabla pago**
+#### Tabla pago
 
 [![Tabla pago](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/pago.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/pago.png)
 
-**Tabla repartidor**
+#### Tabla repartidor
 
 [![Tabla repartidor](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/repartidor.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/repartidor.png)
 
-**Tabla domicilio**
+#### Tabla domicilio
 
 [![Tabla domicilio](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/domicilio.png)](La_Huequita_del_Sabor/huequita-del-sabor-bd/docs/capturas/domicilio.png)
-
-</details>
 
 ## Consultas de álgebra relacional
 
