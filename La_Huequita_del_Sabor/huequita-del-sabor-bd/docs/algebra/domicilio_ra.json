@@ -1,0 +1,58 @@
+{
+  "header": [
+    "id_domicilio",
+    "direccion_entrega",
+    "referencia",
+    "costo_envio",
+    "estado",
+    "id_venta",
+    "id_repartidor"
+  ],
+  "content": [
+    [
+      1,
+      "Barrio La Tebaida, Loja",
+      "Casa blanca junto al parque",
+      0.5,
+      "Entregado",
+      2,
+      1
+    ],
+    [
+      2,
+      "Ciudadela Zamora, Loja",
+      "Frente a la tienda",
+      1.0,
+      "Entregado",
+      4,
+      2
+    ],
+    [
+      3,
+      "Av. Orillas del Zamora, Loja",
+      "Edificio azul, segundo piso",
+      0.75,
+      "Cancelado",
+      6,
+      3
+    ],
+    [
+      4,
+      "Barrio El Valle, Loja",
+      "Junto a la capilla",
+      1.0,
+      "En camino",
+      8,
+      4
+    ],
+    [
+      5,
+      "Ciudadela Daniel \u00c1lvarez, Loja",
+      "Port\u00f3n negro",
+      0.5,
+      "Pendiente",
+      10,
+      null
+    ]
+  ]
+}
